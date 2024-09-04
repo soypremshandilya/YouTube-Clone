@@ -1,0 +1,266 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   YouTube Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-white p-4 flex items-center justify-between shadow">
+   <div class="flex items-center">
+    <i class="fas fa-bars text-gray-600 text-2xl mr-4">
+    </i>
+    <img alt="YouTube Logo" class="h-8" height="40" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" width="100"/>
+   </div>
+   <div class="flex-grow mx-4 hidden md:block">
+    <input class="w-full p-2 rounded border border-gray-300" placeholder="Search" type="text"/>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-gray-600 text-2xl md:hidden">
+    </i>
+    <i class="fas fa-video text-gray-600 text-2xl hidden md:block">
+    </i>
+    <i class="fas fa-th text-gray-600 text-2xl hidden md:block">
+    </i>
+    <i class="fas fa-bell text-gray-600 text-2xl hidden md:block">
+    </i>
+    <img alt="User Avatar" class="h-8 w-8 rounded-full" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-iXUu2oKmaGwOesthxZZetCIe.png?st=2024-09-04T19%3A34%3A46Z&amp;se=2024-09-04T21%3A34%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T19%3A01%3A51Z&amp;ske=2024-09-05T19%3A01%3A51Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=53%2Bs48Yqnj9tviytcTZ2ge9U04dbDwT0Dd%2BkyBzxhss%3D" width="40"/>
+   </div>
+  </header>
+  <div class="flex">
+   <aside class="w-64 bg-white p-4 hidden md:block">
+    <nav class="space-y-2">
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-home text-red-600">
+      </i>
+      <span class="font-semibold">
+       Home
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-compass">
+      </i>
+      <span>
+       Explore
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-subscript">
+      </i>
+      <span>
+       Subscriptions
+      </span>
+     </a>
+     <hr/>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-book">
+      </i>
+      <span>
+       Library
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-history">
+      </i>
+      <span>
+       History
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-clock">
+      </i>
+      <span>
+       Watch later
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-thumbs-up">
+      </i>
+      <span>
+       Liked videos
+      </span>
+     </a>
+     <hr/>
+     <h2 class="text-red-600 font-semibold">
+      SUBSCRIPTIONS
+     </h2>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-music">
+      </i>
+      <span>
+       Music
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-gamepad">
+      </i>
+      <span>
+       Gaming
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-film">
+      </i>
+      <span>
+       Movies
+      </span>
+     </a>
+     <hr/>
+     <h2 class="text-gray-600 font-semibold">
+      MORE FROM YOUTUBE
+     </h2>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-play-circle">
+      </i>
+      <span>
+       YouTube Premium
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-film">
+      </i>
+      <span>
+       Movies
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-broadcast-tower">
+      </i>
+      <span>
+       Live
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-tshirt">
+      </i>
+      <span>
+       Fashion &amp; Beauty
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-graduation-cap">
+      </i>
+      <span>
+       Learning
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-basketball-ball">
+      </i>
+      <span>
+       Sports
+      </span>
+     </a>
+     <hr/>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-cog">
+      </i>
+      <span>
+       Settings
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-flag">
+      </i>
+      <span>
+       Report history
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-question-circle">
+      </i>
+      <span>
+       Help
+      </span>
+     </a>
+    </nav>
+   </aside>
+   <main class="flex-grow p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-owC7xAvfhPsLPFP3hYA7rs65.png?st=2024-09-04T19%3A34%3A50Z&amp;se=2024-09-04T21%3A34%3A50Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T18%3A57%3A30Z&amp;ske=2024-09-05T18%3A57%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=QDZAo1LbHgKo9fBZNpJIy7Sv7vjY2Yn5wfY8FOQKYXs%3D" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        Ed Sheeran, Kygo, Avicii, Robin...
+       </h3>
+       <p class="text-sm text-gray-600">
+        Haa Taa Deep
+       </p>
+       <p class="text-sm text-gray-600">
+        3.6K watching
+       </p>
+       <span class="text-red-600 text-xs font-semibold">
+        LIVE NOW
+       </span>
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-owC7xAvfhPsLPFP3hYA7rs65.png?st=2024-09-04T19%3A34%3A50Z&amp;se=2024-09-04T21%3A34%3A50Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T18%3A57%3A30Z&amp;ske=2024-09-05T18%3A57%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=QDZAo1LbHgKo9fBZNpJIy7Sv7vjY2Yn5wfY8FOQKYXs%3D" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        lofi hip hop radio - beats to...
+       </h3>
+       <p class="text-sm text-gray-600">
+        Lofi Girl
+       </p>
+       <p class="text-sm text-gray-600">
+        31K watching
+       </p>
+       <span class="text-red-600 text-xs font-semibold">
+        LIVE NOW
+       </span>
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-owC7xAvfhPsLPFP3hYA7rs65.png?st=2024-09-04T19%3A34%3A50Z&amp;se=2024-09-04T21%3A34%3A50Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T18%3A57%3A30Z&amp;ske=2024-09-05T18%3A57%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=QDZAo1LbHgKo9fBZNpJIy7Sv7vjY2Yn5wfY8FOQKYXs%3D" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        Design Fails So Bad it's Actually...
+       </h3>
+       <p class="text-sm text-gray-600">
+        SSSniperWolf
+       </p>
+       <p class="text-sm text-gray-600">
+        4.5M views • 1 day ago
+       </p>
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-owC7xAvfhPsLPFP3hYA7rs65.png?st=2024-09-04T19%3A34%3A50Z&amp;se=2024-09-04T21%3A34%3A50Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T18%3A57%3A30Z&amp;ske=2024-09-05T18%3A57%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=QDZAo1LbHgKo9fBZNpJIy7Sv7vjY2Yn5wfY8FOQKYXs%3D" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        'Superman dive' at finish line gives...
+       </h3>
+       <p class="text-sm text-gray-600">
+        RT en Español
+       </p>
+       <p class="text-sm text-gray-600">
+        62M views • 2 years ago
+       </p>
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-owC7xAvfhPsLPFP3hYA7rs65.png?st=2024-09-04T19%3A34%3A50Z&amp;se=2024-09-04T21%3A34%3A50Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T18%3A57%3A30Z&amp;ske=2024-09-05T18%3A57%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=QDZAo1LbHgKo9fBZNpJIy7Sv7vjY2Yn5wfY8FOQKYXs%3D" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        Watch Sky News live
+       </h3>
+       <p class="text-sm text-gray-600">
+        Sky News
+       </p>
+       <p class="text-sm text-gray-600">
+        9.9K watching
+       </p>
+       <span class="text-red-600 text-xs font-semibold">
+        LIVE NOW
+       </span>
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-owC7xAvfhPsLPFP3hYA
