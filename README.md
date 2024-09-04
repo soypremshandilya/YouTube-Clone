@@ -14,7 +14,7 @@ To view this project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/soypremshandilya/YouTube-Clone.git
+    git clone [https://github.com/soypremshandilya/YouTube-Clone.git](https://github.com/soypremshandilya/YouTube-Clone.git)
     ```
 
 2. Navigate to the project directory:
