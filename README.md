@@ -14,12 +14,12 @@ To view this project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/youtube-home-page-clone.git
+    git clone https://github.com/soypremshandilya/YouTube-Clone.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd youtube-home-page-clone
+    cd YouTube-Clone
     ```
 
 3. Open `index.html` in your preferred web browser.
@@ -28,12 +28,6 @@ To view this project locally, follow these steps:
 
 - **HTML**: For the basic structure of the page.
 - **Tailwind CSS**: For responsive design and styling.
-
-## Screenshots
-
-Here are some screenshots of the cloned YouTube home page:
-
-![YouTube Home Page Clone Screenshot](path-to-screenshot.png)
 
 ## Contributing
 
